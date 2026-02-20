@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.7s;
 }
 
 body.dark {
@@ -65,4 +65,5 @@ body.dark .theme-btn {
 body.light .theme-btn {
     background: #000;
     color: #fff;
+
 }

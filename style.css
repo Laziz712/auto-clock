@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+body.dark {
+    background: #1f3b45;
+    color: #fff;
+}
+
+body.light {
+    background: #f2f2f2;
+    color: #111;
+}
+
+.clock {
+    background: rgba(255,255,255,0.15);
+    padding: 25px 45px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+body.light .clock {
+    background-color: rgba(0,0,0,0.08);
+}
+
+.date {
+    font-size: 20px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.time {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.theme-btn {
+    margin-bottom: 25px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+body.dark .theme-btn {
+    background: #fff;
+    color: #000;
+}
+
+body.light .theme-btn {
+    background: #000;
+    color: #fff;
+}
